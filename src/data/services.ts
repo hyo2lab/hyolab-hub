@@ -19,7 +19,7 @@ export interface Service {
   description: string;
   /** 배포 주소. 없으면 카드가 '링크 준비 중' 으로 표시된다. */
   url?: string;
-  /** live = 운영 중, wip = 개발 중 */
+  /** live = 운영 중, wip = 공사 중 (배지 표시) */
   status: ServiceStatus;
   /** 카드 포인트 색 */
   accent: Accent;
@@ -62,25 +62,13 @@ export const services: Service[] = [
     tags: ['Next.js', 'Realtime'],
   },
   {
-    id: 'shepherd',
-    name: 'Shepherd',
-    tagline: '중소규모 교회를 위한 올인원 관리 서비스',
+    id: 'hyotask',
+    name: 'HyoTask',
+    tagline: '음악 작업 팀을 위한 일감 관리',
     description:
-      '교인, 출석, 재정, 비품 관리와 리포트까지 교회 운영에 필요한 일을 한곳에서 처리해요.',
-    url: 'https://church-manage2-au69.vercel.app',
-    status: 'live',
+      '곡마다 작곡·편곡·보컬 같은 역할을 나눠 맡고, 각자의 마감일과 진행 상황을 한눈에 관리해요.',
+    status: 'wip',
     accent: 'emerald',
-    tags: ['Next.js', 'SaaS'],
-  },
-  {
-    id: 'ga-gye-bu',
-    name: '가계부',
-    tagline: '월 가용금액 기준 개인 가계부',
-    description:
-      '급여와 연봉 인상률로 매달 쓸 수 있는 금액을 잡고, 카테고리별 고정 지출과 잔여 금액을 관리해요.',
-    // TODO: 배포 URL
-    status: 'live',
-    accent: 'rose',
-    tags: ['Next.js', 'Supabase'],
+    tags: [],
   },
 ];

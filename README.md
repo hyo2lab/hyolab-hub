@@ -17,7 +17,7 @@
   tagline: '한 줄 소개',
   description: '두세 문장 설명',
   url: 'https://…',             // 없으면 카드에 '링크 준비 중' 표시
-  status: 'live',               // 'live' | 'wip'(개발 중 배지)
+  status: 'live',               // 'live' | 'wip'(공사 중 배지)
   accent: 'violet',             // violet | sky | amber | emerald | rose | orange
   tags: ['Next.js', 'Supabase'],
 }

@@ -69,7 +69,7 @@ function CardBody({ service, gradient }: { service: Service; gradient: string })
         </h3>
         {service.status === 'wip' && (
           <span className="shrink-0 rounded-full bg-amber-100 px-2.5 py-1 text-xs font-medium text-amber-800 dark:bg-amber-500/15 dark:text-amber-300">
-            개발 중
+            공사 중
           </span>
         )}
       </div>
