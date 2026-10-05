@@ -34,7 +34,7 @@ export const services: Service[] = [
     tagline: '홈레코딩용 다층 가사 주석 도구',
     description:
       '가사 한 구간에 리드·더블링·화음·애드립을 색 레인으로 겹쳐 표기하고, 파트를 나눠 함께 녹음해요.',
-    // TODO: 배포 URL
+    url: 'https://hyo-lyrics.vercel.app',
     status: 'live',
     accent: 'violet',
     tags: ['React', 'Supabase'],
@@ -45,21 +45,10 @@ export const services: Service[] = [
     tagline: '둘이서 쓰는 음악 연습실 사용 일지',
     description:
       '누가 언제 연습실을 쓰는지 한눈에 보고, 체크인·체크아웃으로 기록해요. 장소별 통계와 디스코드 알림도 있어요.',
-    // TODO: 배포 URL
+    url: 'https://smc-schedule.vercel.app',
     status: 'live',
     accent: 'sky',
     tags: ['Next.js', 'PWA'],
-  },
-  {
-    id: 'quiz-buzz',
-    name: 'quiz-buzz',
-    tagline: 'QR 하나로 참여하는 실시간 퀴즈 버저',
-    description:
-      '방장이 이미지 퀴즈 세트로 방을 열면, 참여자는 설치나 가입 없이 QR로 들어와 실시간으로 오답 신호를 보내요.',
-    // TODO: 배포 URL
-    status: 'live',
-    accent: 'amber',
-    tags: ['Next.js', 'Realtime'],
   },
   {
     id: 'hyotask',
