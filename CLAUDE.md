@@ -4,6 +4,8 @@
 
 - 서비스 목록의 단일 출처는 `src/data/services.ts`. 화면은 이 배열만 렌더링한다.
 - 단일 페이지. 라우터, 서버, 인증 없음. 의존성은 최소로 유지한다.
+- **공개 레포다.** 비밀 값(.env, API 키, 토큰)이나 공개하지 않을 내부 주소는 커밋하지 않는다.
+- 배포는 Vercel (https://hyolab-hub.vercel.app). `main` 머지 시 자동 배포.
 - 다크 모드는 `<html>` 의 `.dark` 클래스. 초기값은 `index.html` 인라인 스크립트가, 토글은 `src/lib/theme.ts` 가 담당하고 둘은 같은 localStorage 키(`theme`)를 쓴다.
 - Tailwind v4 CSS-first (`src/index.css`). 동적 클래스는 조합하지 말고 전체 문자열로 적는다 (`ServiceCard` 의 `accentStyles` 참고).
 - UI 문구는 한국어(해요체).

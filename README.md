@@ -5,6 +5,7 @@
 
 - hyolab = 허브(이 레포), 각 서비스 = 독립 배포. 허브는 링크로만 연결한다.
 - 서버 없는 정적 사이트. 인증도 없다.
+- 배포: https://hyolab-hub.vercel.app
 
 ## 서비스 추가·수정
 
@@ -50,5 +51,5 @@ pnpm dev          # http://localhost:5173
 
 ## 배포
 
-정적 사이트라 `pnpm build` 결과물인 `dist/` 만 올리면 된다.
-Vercel 이라면 레포를 연결하면 프리셋 **Vite** 가 자동 감지된다 (Build `pnpm build`, Output `dist`).
+Vercel 에 연결되어 있어 `main` 에 머지되면 자동으로 프로덕션 배포되고, PR 마다 미리보기 주소가 생긴다.
+정적 사이트라 다른 곳으로 옮길 때도 `pnpm build` 결과물인 `dist/` 만 올리면 된다.
